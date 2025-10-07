@@ -1,5 +1,4 @@
 import React from "react";
-import cx from "classnames";
 import "./_background.scss";
 
 const Background = () => (
