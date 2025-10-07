@@ -205,10 +205,10 @@
       function loadScreen() {
         var biosElem = document.querySelector(".BIOS");
         biosElem.classList.remove("initial");
-        if (window.localStorage.getItem("loggedIn")) {
-          hideBios();
-          return;
-        }
+        // if (window.localStorage.getItem("loggedIn")) {
+        //   hideBios();
+        //   return;
+        // }
         biosElem.classList.add("visible");
 
         staggerElements(biosElem.getElementsByTagName("div"), 0);
