@@ -1,31 +1,13 @@
 import React from "react";
 import cx from "classnames";
-
 import "./_background.scss";
-import { SettingsContext } from "../../contexts";
 
 const Background = () => (
-  <SettingsContext.Consumer>
-    {context =>
-      context.bgImg || context.bgColor ? (
-        <div
-          className={cx("Background", {
-            "Background--tiled": context.bgStyle === "tile",
-            "Background--contain": context.bgStyle === "contain",
-            "Background--stretch": context.bgStyle === "stretch"
-          })}
-        >
-          <div
-            style={{
-              backgroundImage: `url(${context.bgImg})`,
-              backgroundColor: `${
-                context.bgColor ? context.bgColor : "#5f9ea0"
-              }`
-            }}
-          />
-        </div>
-      ) : null
-    }
-  </SettingsContext.Consumer>
+  <div className="Background Background--vaporwave">
+    <div className="vaporwave-gradient" />
+    <div className="scan-lines" />
+    <div className="grid-lines" />
+  </div>
 );
+
 export default Background;
