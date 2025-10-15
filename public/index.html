@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/static/windowsThing.jpeg" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -29,7 +30,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Windows 98 -- Packard Belle</title>
+    <title>Noé GUENGANT — Windows 98</title>
     <style>
       @keyframes Gradient {
         0% {
@@ -203,18 +204,20 @@
       }
 
       function loadScreen() {
-        var biosElem = document.querySelector(".BIOS");
+        const biosElem = document.querySelector(".BIOS");
         biosElem.classList.remove("initial");
+        //Remove below
         // if (window.localStorage.getItem("loggedIn")) {
         //   hideBios();
         //   return;
         // }
+        //Remove above
         biosElem.classList.add("visible");
 
         staggerElements(biosElem.getElementsByTagName("div"), 0);
       }
 
-      setTimeout(loadScreen, 1500);
+      setTimeout(loadScreen, 1650);
     </script>
   </head>
   <body>
@@ -234,26 +237,28 @@
           Mouse/digitizer... <span>detected</span>
         </div>
         <div class="BIOS__bootMessage4">
-          <p>
+            <p>
             This project is by
+            <a href="https://github.com/NhkI0">Noé GUENGANT</a>
+          </p>
+          <p>
+            French AI & data-sciences student, contactable via
+            <a href="https://www.linkedin.com/in/guengantnoe"
+              >LinkedIn</a>
+          </p>
+            <p>
+            From a fork of
             <a href="https://github.com/padraigfl">Padraig Flood</a>
           </p>
           <p>
-            London based frontend developer, contactable via
-            <a href="https://www.linkedin.com/in/padraig-f-334b8764/"
-              >LinkedIn</a
-            >
+            Likes esport, music and stuff
           </p>
           <p>
-            Likes films and stuff
-            <a href="https://letterboxd.com/padraig">Letterboxd</a>
-          </p>
-          <p>
-            Is unwilling to link his Twitter because he can't remember whether
+            Isn't willing to link his Twitter (not X) because he can't remember whether
             anything he tweeted is embarrassing
           </p>
           <p>
-            Is sorry about how this works weird on tablets
+            Cheers if you came this far &lt;3
           </p>
         </div>
       </div>
@@ -262,15 +267,5 @@
       <div class="WindowsLaunch"></div>
     </div>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
