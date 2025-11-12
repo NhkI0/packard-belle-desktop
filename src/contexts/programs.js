@@ -69,9 +69,9 @@ const startMenu = (injectedData = [], set, shutDown) => [
       icon: icons.help24,
       options: [
         {
-          title: "Support Me?",
+          title: "Contact me ?",
           icon: icons.htmlFile16,
-          onClick: () => window.open("https://www.buymeacoffee.com/padraig")
+          onClick: () => window.location.href = "mailto:guengant.noe@gmail.com"
         }
       ]
     },
@@ -206,10 +206,44 @@ class ProgramProvider extends Component {
   componentDidMount() {
     const desktopSaved = JSON.parse(window.localStorage.getItem("desktop"));
     if (desktopSaved) {
+      // Build desktop from saved data
+      const savedDesktop = buildDesktop(desktopSaved, () => this.open);
+
+      // Always use fresh data for README from the imported file
+      const defaultDesktop = buildDesktop(this.props.desktopData, () => this.open);
+      const freshReadme = defaultDesktop.find(item => item.title === "README");
+
+      // Replace README in saved desktop with fresh version
+      const updatedDesktop = savedDesktop.map(item =>
+        item.title === "README" && freshReadme ? freshReadme : item
+      );
+
       this.setState(() => ({
-        desktop: buildDesktop(desktopSaved, () => this.open)
+        desktop: updatedDesktop
       }));
     }
+
+    // Autostart feature: Open windows marked with autostart: true
+    // Wait for boot animation to complete before opening windows
+    const openAutostartWindows = () => {
+      const defaultDesktop = buildDesktop(this.props.desktopData, () => this.open);
+      const autostartItems = defaultDesktop.filter(item => item.autostart);
+
+      // Open each autostart item with a staggered delay for a nice cascading effect
+      autostartItems.forEach((item, index) => {
+        setTimeout(() => {
+          // Pass autostart config (position, size) as options
+          const autostartConfig = item.autostartConfig || {};
+          this.open({
+            ...item,
+            ...autostartConfig
+          });
+        }, index * 300); // 300ms between each window
+      });
+    };
+
+    // Listen for boot animation complete event
+    window.addEventListener('bootAnimationComplete', openAutostartWindows, { once: true });
   }
 
   toggleShutDownMenu = () =>

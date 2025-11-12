@@ -14,7 +14,7 @@ class SettingsProvider extends Component {
   state = {
     scale: 1,
     crt: true,
-    fullScreen: false,
+    fullScreen: true,
     isMobile: false,
     bgImg:
       (window && window.localStorage.getItem("bgImg")) ||

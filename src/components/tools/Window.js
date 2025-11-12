@@ -58,7 +58,7 @@ class Window extends React.PureComponent {
     maximized:
       (this.context.isMobile && this.props.resizable) ||
       this.props.maximizeOnOpen,
-    ...launchPositions(this.props.inintalX, this.props.initialY)
+    ...launchPositions(this.props.initialX, this.props.initialY)
   };
 
   updateLocation = (a, b) => {
@@ -184,8 +184,8 @@ class Window extends React.PureComponent {
 Window.defaultProps = {
   minWidth: 200,
   minHeight: 200,
-  initialWidth: 250,
-  initialHeight: 250,
+  initialWidth: 560,
+  initialHeight: 315,
   // maxHeight: 448,
   // maxWidth: 635,
   resizable: true,

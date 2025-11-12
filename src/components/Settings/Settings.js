@@ -224,13 +224,13 @@ class Settings extends Component {
                         </div>
                       </div>
                     )}
-                    <div>
-                      Color (HEX val)
-                      <InputText
-                        value={this.state.bgColor}
-                        onChange={this.changeColor}
-                      />
-                    </div>
+                    {/*<div>*/}
+                    {/*  Color (HEX val)*/}
+                    {/*  <InputText*/}
+                    {/*    value={this.state.bgColor}*/}
+                    {/*    onChange={this.changeColor}*/}
+                    {/*  />*/}
+                    {/*</div>*/}
                   </div>
                   <div
                     style={{

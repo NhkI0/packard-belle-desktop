@@ -52,7 +52,7 @@ class Notepad extends Component {
   }
 
   render() {
-    const { props, toggleWrap, toggleSavescreen, setText, state } = this;
+    const { props, toggleWrap, setText, state } = this;
     return (
       <>
         <Window
@@ -66,10 +66,10 @@ class Notepad extends Component {
             {
               ...props,
               multiInstance: true,
-              onSave: !this.props.data.readOnly ? this.quickSave : undefined,
-              onSaveAs: () => toggleSavescreen("save"),
-              onOpenSearch: () => toggleSavescreen("open"),
-              readOnly: props.data.readOnly
+              onSave: undefined,
+              onSaveAs: undefined,
+              onOpenSearch: undefined,
+              readOnly: true
             },
             {
               edit: [

@@ -37,6 +37,9 @@ class InternetExplorer extends Component {
       this.setState({ dimensions: iframeDimensions });
     }
   };
+  handleContentClick = (e) => {
+    // Let mailto and tel links work naturally - don't intercept them
+  };
   render() {
     const { props } = this;
     return (
@@ -78,23 +81,21 @@ class InternetExplorer extends Component {
             title: "Home",
             onClick: noop
           },
-          [
-            {
-              icon: icons.ieSearch,
-              title: "Search",
-              onClick: noop
-            },
-            {
-              icon: icons.ieFavorites,
-              title: "Favorites",
-              onClick: noop
-            },
-            {
-              icon: icons.ieHistory,
-              title: "History",
-              onClick: noop
-            }
-          ],
+          {
+            icon: icons.ieSearch,
+            title: "Search",
+            onClick: noop
+          },
+          {
+            icon: icons.ieFavorites,
+            title: "Favorites",
+            onClick: noop
+          },
+          {
+            icon: icons.ieHistory,
+            title: "History",
+            onClick: noop
+          },
           {
             icon: icons.ieMail,
             title: "Mail",
@@ -106,12 +107,12 @@ class InternetExplorer extends Component {
             onClick: noop
           }
         ]}
-        maximizeOnOpen
       >
         {props.data.__html && (
           <div
             style={{ margin: "2px 1px 0px 2px", minHeight: "calc(100% - 4px)" }}
             dangerouslySetInnerHTML={props.data}
+            onClick={this.handleContentClick}
           />
         )}
         {props.children}

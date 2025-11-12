@@ -39,22 +39,37 @@ const desktopData = [
     }
   },
   {
-    title: "README",
-    icon: icons.htmlFile32,
-    component: "InternetExplorer",
-    data: {
-      __html: readme
-    }
-  },
-  {
-    title: "Resume draft 31 final last 2019 may final 1",
+    title: "Resume draft 17 final last 2025 nov final (1)",
     icon: icons.notepadFile32,
     component: "Notepad",
+    autostart: true, // Also opens on load
+    autostartConfig: {
+      initialX: 1000,      // Position on the right side of screen
+      initialY: 80,        // Slightly lower
+      initialWidth: 750,   // Smaller width
+      initialHeight: 450   // Smaller height
+    },
     data: {
       content: resume,
       readOnly: true
     }
-  }
+  },
+  {
+    title: "README",
+    icon: icons.htmlFile32,
+    component: "InternetExplorer",
+    autostart: true, // This window will open automatically on load
+    autostartConfig: {
+      // Position and size preset for autostart
+      initialX: 50,        // X position (left side)
+      initialY: 50,        // Y position (top)
+      initialWidth: 960,   // Window width
+      initialHeight: 600   // Window height
+    },
+    data: {
+      __html: readme
+    }
+  },
 ];
 
 export default desktopData;

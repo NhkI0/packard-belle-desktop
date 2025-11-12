@@ -4,7 +4,8 @@ const buildCustomOptions = rows =>
       ...acc,
       {
         title: val,
-        options: rows[val]
+        options: rows[val],
+        closeOnClick: true
       }
     ],
     []
@@ -15,7 +16,8 @@ export const helpOptions = props => ({
   options: [
     [{ title: "Help Topics", isDisabled: true }],
     { title: `About ${props.title}`, isDisabled: true }
-  ]
+  ],
+  closeOnClick: true
 });
 
 export const buildMenu = (props, customOptions = {}) => {
@@ -53,7 +55,8 @@ export const buildMenu = (props, customOptions = {}) => {
   return [
     {
       title: "File",
-      options: [...multiInstance, saveOptions, ...fileOptions, onClose]
+      options: [...multiInstance, saveOptions, ...fileOptions, onClose],
+      closeOnClick: true
     },
     ...customElements,
     helpOptions(props)

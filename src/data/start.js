@@ -1,22 +1,17 @@
 import * as icons from "../icons";
-import google1999 from "./textFiles/google1999";
-import facepalm from "./textFiles/facepalm";
+import facepalm from "./textFiles/amogus";
 import squirtel from "./textFiles/squirtel";
 import rollin from "./textFiles/rollin";
-import sunscreen from "./textFiles/sunscreen";
+import sunscreen from "./textFiles/aimer";
 import allStarTabs from "./textFiles/allStarTabs";
+import readme from "./textFiles/readme";
+import resume from "./textFiles/resume";
 
 const accessories = [
   { title: "Entertainment", icon: icons.folderProgram16, options: [] },
   { title: "Internet Tools", icon: icons.folderProgram16, options: [] },
   { title: "System Tools", icon: icons.folderProgram16, options: [] },
   { title: "Calculator", icon: icons.calculator16, isDisabled: true },
-  {
-    title: "Minesweeper",
-    icon: icons.minesweeper16,
-    component: "Minesweeper",
-    multiInstance: true
-  },
   {
     title: "Notepad",
     icon: icons.notepad16,
@@ -41,16 +36,30 @@ const accessories = [
   }
 ];
 
+const startup = [
+  {
+    title: "README",
+    icon: icons.htmlFile16,
+    component: "InternetExplorer",
+    data: {
+      __html: readme
+    }
+  },
+  {
+    title: "Resume draft 17 final last 2025 nov final (1)",
+    icon: icons.notepadFile16,
+    component: "Notepad",
+    data: {
+      content: resume,
+      readOnly: true
+    }
+  }
+];
+
 const programs = [
   { title: "Accessories", icon: icons.folderProgram16, options: accessories },
   { title: "Online Services", icon: icons.folderProgram16, options: [] },
-  { title: "StartUp", icon: icons.folderProgram16, options: [] },
-  {
-    title: "IE4(BROKEN)",
-    icon: icons.internetExplorere16,
-    component: "InternetExplorer",
-    data: { __html: google1999 }
-  },
+  { title: "StartUp", icon: icons.folderProgram16, options: startup },
   {
     title: "JS-DOS Prompt",
     icon: icons.msDos16,
@@ -63,32 +72,19 @@ const programs = [
 
 const favorites = [
   {
-    title: "Channels",
-    options: [],
-    icon: icons.folder16
-  },
-  {
-    title: "Links",
+    title: "Projects",
     icon: icons.folder16,
     options: [
       {
-        title: "MySpace",
+        title: "D4G",
         type: "ExternalLink",
         icon: icons.htmlFile16,
-        href:
-          "https://web.archive.org/web/20080320075546/www.myspace.com/my_address"
-      }
-    ]
-  },
-  {
-    title: "Media",
-    icon: icons.folder16,
-    options: [
+        href: "https://nguengant.fr/d4g"
+      },
       {
-        title: "My Big List of Films",
-        type: "ExternalLink",
+        title: "Super secret project",
         icon: icons.htmlFile16,
-        href: "https://letterboxd.com/padraig"
+        isDisabled: true
       }
     ]
   },
@@ -96,7 +92,7 @@ const favorites = [
     title: "My Github",
     type: "ExternalLink",
     icon: icons.htmlFile16,
-    href: "https://github.com/padraigfl"
+    href: "https://github.com/NhkI0"
   }
 ];
 
@@ -140,7 +136,7 @@ const startMenuData = [
         title: "ASCII Art",
         options: [
           {
-            title: "facepalm",
+            title: "amogus",
             icon: icons.notepadFile32,
             component: "Notepad",
             data: {
@@ -162,7 +158,7 @@ const startMenuData = [
         title: "Lyrics",
         options: [
           {
-            title: "sunscreen",
+            title: "aimer",
             icon: icons.notepadFile32,
             component: "Notepad",
             data: {

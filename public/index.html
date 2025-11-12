@@ -8,13 +8,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta property="og:title" content="Packard Belle (W98 Desktop Clone)" />
-    <meta property="og:url" content="https://packard-belle.netlify.com" />
-    <meta property="og:image" content="%PUBLIC_URL%/static/des.png" />
+    <meta property="og:title" content="Noé GUENGANT - AI & Data Sciences Portfolio" />
+    <meta property="og:url" content="https://nguengant.fr" />
+    <meta property="og:image" content="https://nguengant.fr/static/des.png" />
+    <meta property="og:type" content="website" />
     <meta
-      property="og:description" 
-      content="A Windows 98 clone built upon a W98 component library (https://github.com/padraigfl/packard-belle"
+      property="og:description"
+      content="French AI & Data Sciences engineering student. Check out my Windows 98-inspired portfolio showcasing my projects and experience!"
     />
+    <meta name="description" content="Noé GUENGANT - French AI & Data Sciences engineering student. Portfolio featuring projects, resume, and contact information in a retro Windows 98 style." />
+    <meta name="author" content="Noé GUENGANT" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noé GUENGANT - AI & Data Sciences Portfolio" />
+    <meta name="twitter:description" content="French AI & Data Sciences engineering student. Check out my Windows 98-inspired portfolio!" />
+    <meta name="twitter:image" content="https://nguengant.fr/static/des.png" />
+
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -108,13 +118,17 @@
         color: white;
         font-family: AMIBios !important;
         z-index: 1;
-        width: 640px;
-        height: 480px;
         margin: auto;
         padding: 16px;
       }
       .BIOS {
         background-color: #000000;
+        width: 100vw;
+        height: 100vh;
+      }
+      .WindowsLaunch {
+        width: 640px;
+        height: 480px;
       }
       .WindowsLaunchWrapper {
         background: linear-gradient(
@@ -151,14 +165,17 @@
         background-position: right;
       }
       @media (max-width: 600px), (max-height: 600px) {
-        .BIOS,
+        .BIOS {
+          margin-top: 0;
+          background-position: center;
+          width: 100vw;
+          height: 100vh;
+        }
         .WindowsLaunch {
           margin-top: 0;
           background-position: center;
           width: 100vw;
           height: 80vh;
-        }
-        .WindowsLaunch {
           background-size: contain;
         }
         .BIOS__logo {
@@ -189,6 +206,8 @@
         setTimeout(() => {
           windowsLaunch.classList.remove("visible");
           windowsLaunch.classList.add("hidden");
+          // Dispatch event when boot animation is complete
+          window.dispatchEvent(new Event('bootAnimationComplete'));
         }, 5000);
       }
 
