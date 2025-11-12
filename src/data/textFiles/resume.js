@@ -61,7 +61,7 @@ I joined a team that gave the mission to implement a full and comprehensive logg
 I had to learn the tools they used, the specific process they used and also learn the proprietary code of their pipeline.
 I'll be eternally grateful to my tutor for every tips he gave me, I learned so much about good practices in programming and about python with him. 
 He was harsh and insufferable at every code review for my PRs, but this how I learned the most in all my life and this is also the way of working I'll adopt my whole life if I ever get to have trainees.
-I learned "professional ways" of coding, and know that my ptyhon's code are now industry standards, and even though it is not yet at a senior's grade, I'm pretty sure I'll reach this soon enough.
+I learned "professional ways" of coding, and know that my python's code are now industry standards, and even though it is not yet at a senior's grade, I'm pretty sure I'll reach this soon enough.
 
 
 ===============
