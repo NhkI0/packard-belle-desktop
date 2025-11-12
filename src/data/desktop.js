@@ -1,6 +1,7 @@
 import * as icons from "../icons";
 import resume from "./textFiles/resume";
 import readme from "./textFiles/readme";
+import volunteer from "./textFiles/volunteer";
 
 const desktopData = [
   {
@@ -68,6 +69,15 @@ const desktopData = [
     },
     data: {
       __html: readme
+    }
+  },
+  {
+    title: "As a volunteer",
+    icon: icons.notepadFile32,
+    component: "Notepad",
+    data: {
+      content: volunteer,
+      readOnly: true
     }
   },
 ];
