@@ -184,8 +184,8 @@ class Window extends React.PureComponent {
 Window.defaultProps = {
   minWidth: 200,
   minHeight: 200,
-  initialWidth: 560,
-  initialHeight: 315,
+  initialWidth: 800,
+  initialHeight: 600,
   // maxHeight: 448,
   // maxWidth: 635,
   resizable: true,

@@ -56,9 +56,18 @@ const startup = [
   }
 ];
 
+const onlineServices = [
+  {
+    title: "D4G Project",
+    icon: icons.htmlFile16,
+    type: "ExternalLink",
+    href: "https://nguengant.fr/d4g"
+  }
+];
+
 const programs = [
   { title: "Accessories", icon: icons.folderProgram16, options: accessories },
-  { title: "Online Services", icon: icons.folderProgram16, options: [] },
+  { title: "Online Services", icon: icons.folderProgram16, options: onlineServices },
   { title: "StartUp", icon: icons.folderProgram16, options: startup },
   {
     title: "JS-DOS Prompt",
@@ -93,6 +102,12 @@ const favorites = [
     type: "ExternalLink",
     icon: icons.htmlFile16,
     href: "https://github.com/NhkI0"
+  },
+  {
+    title: "My volunteering Article (French)",
+    type: "ExternalLink",
+    icon: icons.htmlFile16,
+    href: "https://www.ouest-france.fr/pays-de-la-loire/saint-barthelemy-danjou-49124/laide-au-numerique-et-multimedia-a-saint-barthelemy-danjou-cest-reparti-pour-quatre-ans-cb2610e4-644c-11ee-ac02-c502cc724ccb"
   }
 ];
 

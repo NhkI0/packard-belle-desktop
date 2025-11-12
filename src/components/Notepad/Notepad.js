@@ -12,7 +12,7 @@ class Notepad extends Component {
     data: {}
   };
   state = {
-    wrap: false,
+    wrap: true,
     data: {
       content: "",
       ...this.props.data
