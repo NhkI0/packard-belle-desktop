@@ -63,12 +63,26 @@ const generateRows = () => {
         `
     },
     {
+      title: "My wishes for later",
+      image: "https://blob.gifcities.org/gifcities/4TALIOEMPNLNQMJ7JBJBF6A55ECQFDQW.gif",
+      content: `
+        My dream job would be data analyst or some ML/AI consulting (only for a few years) in the Netherlands.<br>
+        <ul>
+<li>During my Erasmus, I got to live and study in a really international environment, which helped me become more adaptable and open-minded. Working with people from different cultures taught me how to communicate better and look at problems from different angles, which I think is something super useful in data and AI work.<br></li>
+
+<li>My work experience also gave me a good mix of technical and practical skills. I learned how to collect and analyze data, make sense of patterns, and present results in a way that actually helps teams make decisions. I really enjoyed collaborating with others and seeing how data can make a real difference in projects.<br></li>
+
+<li>Overall, both my Erasmus and my work experience made me more confident about working in international, fast-paced environments. I’d love to bring that mindset to a data or AI-related role, keep learning, and grow through hands-on experience.</li>
+</ul>        
+`
+    },
+    {
       title: "More",
       image: "https://blob.gifcities.org/gifcities/TMXCY6LXZOM5I234EFPO4QZXURGKDECL.gif",
       content: `
         <ul>
           <li>You'll find more about me in the resume (can be found on the desktop if not automatically opened)</li>
-          <li>We had an interschool project where my team and I finished [Still waiting for results]. The rules were
+          <li>We had an interschool team project about green AI. The rules were
            simple, using a default (useless) model, try to summarize a text in 10-15 words while consuming the less 
            possible. You can find more about it in the start menu: "Favorites -> Projects -> D4G"
           </li>

@@ -19,10 +19,6 @@ Mixed feelings about dutch (I WISH I COULD UNDERSTAND THIS NONSENSE)
 ===============
 FORMATIONS (bit more serious)
 ===============
-2022-2024: ESAIP, Engineering school -- St Barthélemy d'Anjou
-In France, before attending an engineering diploma you need to spend 2 years in preparatory classes, this ensure you know all the bases you could ever need in sciences.
-I got the chance to have all of my lectures in english and a mixed program with both informatics and environment studies. This is to my attention one if not the only mixed informatics/environment program that exist in France.
-
 2024-Present: ESAIP, Engineering school -- St Barthélemy d'Anjou
 I'm currently studying an Engineering diploma with a specialisation in AI and Data Analysis.
 I learned:
@@ -34,6 +30,10 @@ I learned:
 - Data Engineering and Analysis
 
 I also learned to work as a team, and so respectfully of others due to HR and teamwork we did.
+
+2022-2024: ESAIP, Engineering school -- St Barthélemy d'Anjou
+In France, before attending an engineering diploma you need to spend 2 years in preparatory classes, this ensure you know all the bases you could ever need in sciences.
+I got the chance to have all of my lectures in english and a mixed program with both informatics and environment studies. This is to my attention one if not the only mixed informatics/environment program that exist in France.
 
 ===============
 ABROAD EXPERIENCES
@@ -52,10 +52,6 @@ It's also the first time I got long lasting project from the beginning to the en
 ===============
 WORK EXPERIENCE
 ===============
-2023-2024: McDonald's -- Crewman
-Because money isn't unlimited I worked at McDonald's on side of my studies, even though the timetable was 100% against the geneva convention it taught me some pretty valuable stuff. First of all teamwork under pressure, never had I experienced such pressure.
-It also taught me that nothing is ever earned in this world and hard work is the key to everything. And to be honest I now know that I'll be the best in my field to avoid working in a chain ever again.
-
 Summer 2025: Baker Tilly France -- Data architect internship
 I joined a team that gave the mission to implement a full and comprehensive logging system to their pipeline. It was my first time ever joining a professional team and having to adapt to one.
 I had to learn the tools they used, the specific process they used and also learn the proprietary code of their pipeline.
@@ -63,6 +59,9 @@ I'll be eternally grateful to my tutor for every tips he gave me, I learned so m
 He was harsh and insufferable at every code review for my PRs, but this how I learned the most in all my life and this is also the way of working I'll adopt my whole life if I ever get to have trainees.
 I learned "professional ways" of coding, and know that my python's code are now industry standards, and even though it is not yet at a senior's grade, I'm pretty sure I'll reach this soon enough.
 
+2023-2024: McDonald's -- Crewman
+Because money isn't unlimited I worked at McDonald's on side of my studies, even though the timetable was 100% against the geneva convention it taught me some pretty valuable stuff. First of all teamwork under pressure, never had I experienced such pressure.
+It also taught me that nothing is ever earned in this world and hard work is the key to everything. And to be honest I now know that I'll be the best in my field to avoid working in a chain ever again.
 
 ===============
 KEYWORDS I KNOW AT LEAST A LITTLE BIT AND WOULD TOUCH AGAIN

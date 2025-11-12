@@ -82,6 +82,16 @@ const desktopData = [
     data: {
       __html: readme
     }
+  },
+  {
+    title: "D4G Project",
+    icon: icons.htmlFile32,
+    onClick: () => window.open("https://nguengant.fr/d4g", "_blank")
+  },
+  {
+    title: "My volunteering Article",
+    icon: icons.htmlFile32,
+    onClick: () => window.open("https://www.ouest-france.fr/pays-de-la-loire/saint-barthelemy-danjou-49124/laide-au-numerique-et-multimedia-a-saint-barthelemy-danjou-cest-reparti-pour-quatre-ans-cb2610e4-644c-11ee-ac02-c502cc724ccb", "_blank")
   }
 ];
 
