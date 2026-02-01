@@ -3,7 +3,7 @@ const generateRows = () => {
     {
       title: "Introduction",
       image:
-        "https://appstickers-cdn.appadvice.com/1164831016/819286823/18ab4614722102b2a0def24dda1ea4bd-1.gif",
+        "https://www.cameronsworld.net/img/content/14/7.gif",
       content: `
       Hi, my name is Noé GUENGANT, and I'm an AI/Data Sciences engineer from France.<br><br>
       You might be wondering "Why is this designed this way ?" (and you'd be right). My personal belief is that in a
@@ -82,9 +82,14 @@ const generateRows = () => {
       content: `
         <ul>
           <li>You'll find more about me in the resume (can be found on the desktop if not automatically opened)</li>
-          <li>We had an interschool team project about green AI. The rules were
+          <li>
+           We had an interschool team project about green AI. The rules were
            simple, using a default (useless) model, try to summarize a text in 10-15 words while consuming the less 
-           possible. You can find more about it in the start menu: "Favorites -> Projects -> D4G"
+           possible. You can find more about it in the start menu: "Favorites -> Projects -> D4G" (Actually not, I 
+           disabled it, the model took way too much memory).
+          </li>
+          <li>
+          But you can find many other projects I did! Not all of them school related but look them up!
           </li>
           <li>I can't wait to hear from you so we can discuss (I'm sure) amazing stuff!</li>
         </ul>
