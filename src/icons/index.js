@@ -44,6 +44,10 @@ export { default as windowsUpdate16 } from "./windowsUpdate16-min.png";
 export { default as windowsUpdate24 } from "./windowsUpdate24-min.png";
 export { default as wordpad16 } from "./wordpad16-min.png";
 
+export { default as fitgirl } from "./fitgirl.jpg";
+export { default as lolIcon } from "./lol-icon.ico";
+export { default as gitHubIcon } from "./github_logo.png";
+
 export { default as back } from "./back-min.png";
 export { default as forward } from "./forward-min.png";
 export { default as cut } from "./cut-min.png";
