@@ -58,10 +58,11 @@ const startup = [
 
 const onlineServices = [
   {
-    title: "D4G Project",
+    title: "D4G Project (Disabled for cause on memory on the VPS)",
     icon: icons.htmlFile16,
     type: "ExternalLink",
-    href: "https://nguengant.fr/d4g"
+    href: "https://nguengant.fr/d4g",
+    isDisabled: true
   }
 ];
 
@@ -85,15 +86,35 @@ const favorites = [
     icon: icons.folder16,
     options: [
       {
-        title: "D4G",
+        title: "D4G (Disabled for cause on memory on the VPS)",
         type: "ExternalLink",
         icon: icons.htmlFile16,
-        href: "https://nguengant.fr/d4g"
+        href: "https://nguengant.fr/d4g",
+        isDisabled: true
       },
       {
-        title: "Super secret project",
-        icon: icons.htmlFile16,
-        isDisabled: true
+        title: "League of Legends : Guess The Splash",
+        type: "ExternalLink",
+        icon: icons.lolIcon,
+        href: "https://nguengant.fr/gts",
+      },
+      {
+        title: "Fitgirl Repacks Download Manager",
+        type: "ExternalLink",
+        icon: icons.fitgirl,
+        href: "https://github.com/NhkI0/Fitgirl-FuckingFast-Scraper",
+      },
+      {
+        title: "Discord Livechat",
+        type: "ExternalLink",
+        icon: icons.gitHubIcon,
+        href: "https://github.com/NhkI0/discord-livechat",
+      },
+      {
+        title: "Portfolio optimization",
+        type: "ExternalLink",
+        icon: icons.gitHubIcon,
+        href: "https://github.com/NhkI0/multi-criteria-optimization"
       }
     ]
   },
