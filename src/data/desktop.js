@@ -83,11 +83,11 @@ const desktopData = [
       __html: readme
     }
   },
-  {
-    title: "D4G Project",
-    icon: icons.htmlFile32,
-    onClick: () => window.open("https://nguengant.fr/d4g", "_blank")
-  },
+  // {
+  //   title: "D4G Project",
+  //   icon: icons.htmlFile32,
+  //   onClick: () => window.open("https://nguengant.fr/d4g", "_blank")
+  // },
   {
     title: "My volunteering Article",
     icon: icons.htmlFile32,
